@@ -94,7 +94,22 @@ margin-bottom: 30px;
     right: 30px;
     width: 40px;
     cursor: pointer;
+    display: none;
 }
+
+/* EVENTS SECTION */
+section{
+    width: 80%;
+    margin: 80px auto;
+}
+.title{
+    text-align: center;
+    font-size: 4vmin;
+    color: rgb(73,73,126);
+}
+
+
+
 /* MOBILE DEVICE */
 
 @media screen and (max-width:850px) {
@@ -107,6 +122,9 @@ margin-bottom: 30px;
         top: 30px;
         left: 30px;
     }
+    .menu-btn{
+        display: block;
+    }
 
     .nav-links{
         flex-direction: column;
@@ -115,14 +133,14 @@ margin-bottom: 30px;
         justify-content: center;
         background: rgb(126, 102, 126);
         margin: top -900px;
-
         display: none; /* Initially hidden */
-        transition: transform 0.3s ease-in-out;
+        transition: all 0.5s ease
 
     }
     .nav-links.mobile-menu{
         margin-top: 0px;
         display: flex;
+        border-bottom-right-radius: 30%;
     }
 
     .nav-links li{
